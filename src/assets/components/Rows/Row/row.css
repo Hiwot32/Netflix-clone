@@ -11,6 +11,9 @@
 .row_poster:hover{
     transform: scale(1.08);
 }
+.row_posterLarge{
+    max-height: 250px;
+}
 
 .row_poster{
     width:100%;
@@ -18,7 +21,4 @@
     max-height: 100px;
     transition: transform 450px;
     margin-right: 10px;
-}
-.row_posterLarge{
-    max-height: 20px;
 }

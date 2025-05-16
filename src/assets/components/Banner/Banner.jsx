@@ -36,9 +36,9 @@ const Banner=()=> {
         </div>
         <div className="banner-contents">
       <h1 className="banner-title">{movie?.title || movie?.name || movie?.original_name}</h1>
-      <div className="banner-buttons">
-        <button className="play-button">Play</button>
-        <button className="lists-button">My lists</button>
+      <div className="banner-button">
+        <button className="banner-buttons play">Play</button>
+        <button className="banner-buttons lists">My lists</button>
       </div>
       </div>
     </header>

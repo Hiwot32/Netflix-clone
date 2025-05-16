@@ -33,7 +33,7 @@ const Row=({title, fetchUrl, isLarg})=> {
                 setTrailerUrl(urlParams.get('v'));
             })
         }
-        
+      
     }
      const opts={
             height:'390',
