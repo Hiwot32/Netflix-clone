@@ -1,4 +1,4 @@
-xnimport React from 'react'
+import React from 'react'
 import { useEffect, useState } from 'react';
 import axios from '../../utilities/axios';
 import requests from '../../utilities/request'
