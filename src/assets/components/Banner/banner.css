@@ -1,29 +1,28 @@
 .banner{
-  margin-top: -10hv;
+  margin-top: 10hv;
   height:80vh;
-  margin-bottom: -10px;
+  margin-bottom: -70px;
   color:white;  
   object-fit: contain;
 }
 .banner-contents{
     margin-left: 50px;
-    padding-top: px;
     position: absolute;
-    top: 40%;
+    top: 20%;
     color: white;
     z-index: 2;
     
 }
 .banner-title{
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: 2.7rem;
+    font-weight: 700;
     padding-top: 0.3rem;
 }
 .banner-description{
-    width:45rem;
+    width:80%;
     line-height: 1;
     padding:1rem 0;
-    font-size: 1rem;
+    font-size: 17px;
     max-width: 360px;
     height:80px
 }
@@ -35,7 +34,7 @@
     font-size: 1.2rem;
     font-weight: 700;
     border-radius: 0.9vw;
-    padding:1rem 3rem;
+    padding:0.8rem 3rem;
     margin-right: 2rem;
     background-color: rgba(51,51,51,0.5);
 }
@@ -47,4 +46,26 @@
     background-color:#6c6c6c;
     color: #000;
     transition:all 0.5;
+}
+
+@media screen and (max-width: 768px) {
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-buttons {
+    font-size: 0.9rem;
+  }
+
+  .banner-button {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 370px){
+    .banner-description{
+        display:none;
+    }
 }

@@ -59,7 +59,7 @@ const Row=({title, fetchUrl, isLarg})=> {
                 
             ))}
         </div>
-        <div style={{padding:'40px'}}>
+        <div style={{padding:'2vw'}}>
                 {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}    
                 </div>
 

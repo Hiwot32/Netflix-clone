@@ -24,3 +24,17 @@
     margin-bottom:10px;
     cursor: pointer;
 }
+.service-code{
+    border:1px solid white;
+    margin: 15px;
+    padding:5px;
+    width:100px;
+}
+@media screen and (max-width: 768px){
+    .all-divs{
+        display: block;
+    }
+    .outer-container-footer{
+        margin-top: -40px;
+    }
+}

@@ -54,6 +54,12 @@ function Footer() {
                     
                 </div>
             </div>
+            <div className="service-code">
+                Service Code
+            </div>
+            <div className="year">
+                &copy; 1997-2025, Netflix inc.
+            </div>
         </div>
      </section>
     </div>

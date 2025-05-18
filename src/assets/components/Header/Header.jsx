@@ -7,11 +7,11 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 function Header() {
   return (
-    <div>
+    <div className="header">
       <div className="outer-container">
             <div className="header-lists">
                 <ul className="nav-lists">
-                    <li><img src={Netflixlogo} alt="netflixLogo" width="100" /></li>
+                    <li ><img className="logo" src={Netflixlogo} alt="netflixLogo" width="100" /></li>
                     <li>Home</li>
                     <li>TV Shows</li>
                     <li>Movies</li>

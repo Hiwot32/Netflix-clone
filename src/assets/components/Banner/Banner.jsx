@@ -4,6 +4,7 @@ import axios from '../../utilities/axios';
 import requests from '../../utilities/request'
 import './banner.css'
 
+
 const Banner=()=> {
     const [movie, setMovie]=useState({});
      useEffect(() => {
@@ -19,11 +20,14 @@ const Banner=()=> {
     })();
   }, []);
   console.log(movie)
+  
+  function turncate(str, n){
+    return str?.length>n ? str?.substr(0,n-1)+'...' : str;
+  }
 
   return (
     <header>
-        <div
-        className="banner"
+        <div className="banner"
         style={{
             backgroundSize:"cover",
             backgroundImage:`url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
@@ -35,11 +39,12 @@ const Banner=()=> {
 
         </div>
         <div className="banner-contents">
-      <h1 className="banner-title">{movie?.title || movie?.name || movie?.original_name}</h1>
+      <h2 className="banner-title">{movie?.title || movie?.name || movie?.original_name}</h2>
       <div className="banner-button">
         <button className="banner-buttons play">Play</button>
-        <button className="banner-buttons lists">My lists</button>
+        <button className="banner-buttons blists">My lists</button>
       </div>
+      <h5 className="banner-description">{turncate(movie?.overview, 150)}</h5>
       </div>
     </header>
   );
